@@ -1,0 +1,124 @@
+{
+    "itineraries":[
+        // Lidia
+        {
+            "itineraryName": "Get to know London",
+            "price": 2,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Museum","#History","#Landscapes"],
+            "user": "64f0f298b4b3a4f8f35d7cc6",
+            "cities": "64deded30352015fb74bfe49"
+        },
+        // Yasmin
+        {
+            "itineraryName": "Big Ben",
+            "price": 1,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#Dinner"],
+            "user": "64f0f2a1b4b3a4f8f35d7cc8",
+            "cities": "64deded30352015fb74bfe49"
+        },
+        // Sophia
+        {
+            "itineraryName": "London eye",
+            "price": 3,
+            "duration": 4,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#AmusementPark","#BeautifulViews","#Landscapes"],
+            "user": "64f0f2adb4b3a4f8f35d7cca",
+            "cities": "64deded30352015fb74bfe49"
+        },
+        // Leopold
+        {
+            "itineraryName": "Museum Sachsenhausen",
+            "price": 2,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Museum","#History","#Landscapes"],
+            "user": "64f0f02fc6c374ade259b9fb",
+            "cities": "64dedeae0352015fb74bfe47"
+        },
+        // Markus
+        {
+            "itineraryName": "Brandenburg Gate",
+            "price": 1,
+            "duration": 3,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#Photographs"],
+            "user": "64f0f27db4b3a4f8f35d7cc4",
+            "cities": "64dedeae0352015fb74bfe47"
+        },
+        // Alexander
+        {
+            "itineraryName": "Abraham Lincoln Memorial",
+            "price": 2,
+            "duration": 3,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#BeautifulViews"],
+            "user": "64f0f2b5b4b3a4f8f35d7ccc",
+            "cities": "64e130729eb4fcc146c2bedd"
+        },
+        // Ethan
+        {
+            "itineraryName": "Washington Monument",
+            "price": 3,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#Landscapes"],
+            "user": "64f0f2bdb4b3a4f8f35d7cce",
+            "cities": "64e130729eb4fcc146c2bedd"
+        },
+        // Lily
+        {
+            "itineraryName": "United States Capitol",
+            "price": 4,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Policy","#History","#Democracy"],
+            "user": "64f0f2c6b4b3a4f8f35d7cd0",
+            "cities": "64e130729eb4fcc146c2bedd"
+        },
+        // Francisco
+        {
+            "itineraryName": "Monument to the Revolution",
+            "price": 1,
+            "duration": 2,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#Revolution"],
+            "user": "64f0f2cdb4b3a4f8f35d7cd2",
+            "cities": "64e131fb9eb4fcc146c2bee9"
+        },
+        // Martín
+        {
+            "itineraryName": "Obelisk",
+            "price": 3,
+            "duration": 3,
+            "like": 0,
+            "description": "",
+            "comments":[],
+            "hashtag": ["#Monument","#History","#BeautifulViews"],
+            "user": "64f0f2d4b4b3a4f8f35d7cd4",
+            "cities": "64e132109eb4fcc146c2beed"
+        }
+    ]
+}

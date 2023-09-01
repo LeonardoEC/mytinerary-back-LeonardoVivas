@@ -14,18 +14,25 @@ const controller = {
                     queries.continent = req.query.continent
                 }
         */
+        if (req.query.itinearyId) {
+            queries.itineary = req.query.itinearyId
+        }
 
         try {
 
-            const cities = await Citie.find(queries)
+            let cities
+
+            if (req.query.itineary === 'true') {
+                cities = await Citie.find(queries).populate('itineary')
+            } else {
+                cities = await Citie.find(queries)
+            }
 
             if (cities.length > 0) {
-
                 return res.status(200).json({
                     success: true,
                     cities
                 })
-
             }
 
             return res.status(404).json({
@@ -106,7 +113,7 @@ const controller = {
     },
     deletCities: async (req, res) => {
         try {
-            await Citie.deleteOne({_id: req.params.id})
+            await Citie.deleteOne({ _id: req.params.id })
             return res.status(200).json({
                 success: true,
                 message: 'Ciudad eliminada'

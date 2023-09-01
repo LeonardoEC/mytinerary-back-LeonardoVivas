@@ -1,5 +1,7 @@
 import express from 'express'
 import citiesRouter from './cities.router.js'
+import itineraryRouter from './itineraries.router.js'
+import userRouter from './users.router.js'
 
 const router = express.Router()
 
@@ -9,5 +11,7 @@ router.get('/',(req, res) =>{
 
 
 router.use('/cities', citiesRouter)
+router.use('/itineraries', itineraryRouter)
+router.use('/users', userRouter)
 
 export default router

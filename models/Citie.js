@@ -1,4 +1,4 @@
-import { Schema,model } from "mongoose"
+import { Schema, model, Types } from "mongoose"
 
 let colletion = 'cities'
 const schema = new Schema({
@@ -9,6 +9,7 @@ const schema = new Schema({
     currency: { type: String, require:true},
     map: { type: String, require:true},
     img: { type: String, require:true},
+    itineary: [{type: Types.ObjectId, ref: 'itineary'}],
 }, {
     timestamps: true
 })
