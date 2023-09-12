@@ -10,16 +10,16 @@ export const createUserSchema = Joi.object({
     password: Joi.string()
         .required()
         .min(8)
-        .max(8)
+        .max(15)
         .alphanum(),
     userName: Joi.string()
+        .required()
         .min(2)
         .max(50),
     userLastName: Joi.string()
+        .required()
         .min(2)
         .max(50),
-    userImg: Joi.string()
-        .uri(),
     country: Joi.string()
         .min(2)
         .max(50),

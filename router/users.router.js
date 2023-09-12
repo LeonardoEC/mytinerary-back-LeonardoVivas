@@ -6,6 +6,8 @@ import { validator } from '../middlewares/validator.js'
 import { createUserSchema } from '../schema/user.schema.js'
 
 
+
+
 const router = express.Router()
 
 const {getUser, postUser, getUserById, putUser, deleteUser} = userController
