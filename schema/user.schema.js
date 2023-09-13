@@ -24,3 +24,19 @@ export const createUserSchema = Joi.object({
         .min(2)
         .max(50),
 })
+
+export const userSignIn = Joi.object({
+    email: Joi.string()
+        .required()
+        .email({
+            minDomainSegments: 2
+        })
+        .messages({
+            'any.required': 'Email is required'
+        }),
+    password: Joi.string()
+        .required()
+        .min(8)
+        .max(15)
+        .alphanum()
+})

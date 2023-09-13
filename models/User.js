@@ -11,6 +11,7 @@ const schema = new Schema({
     role: { type: String, default:"user"},
     country: { type: String },
     online: { type: Boolean, default: false },
+    google: {type: Boolean, default:false},
     verified: { type: Boolean, default: true },
     verified_code: { type: String },
     itineary: {type: Types.ObjectId, ref: 'itineary'}

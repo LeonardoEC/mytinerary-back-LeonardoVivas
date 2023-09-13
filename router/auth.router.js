@@ -5,11 +5,12 @@ import { accountExistsSignin } from '../middlewares/auth/accountExistsSignin.mid
 import { accountHasBeenVerified } from '../middlewares/auth/accountHasBeenVerified.middleware.js'
 import { passwordIsOk } from '../middlewares/auth/passwordIsOk.middleware.js'
 import passport from '../middlewares/passport.js'
-
 import { validator } from '../middlewares/validator.js'
-import { createUserSchema } from '../schema/user.schema.js'
 
-const { signup, signin, signout, token } = authController
+import { createUserSchema } from '../schema/user.schema.js'
+import { userSignIn } from '../schema/user.schema.js'
+
+const { signup, signin, signout, token, googleSignin } = authController
 
 const router = express.Router()
 
@@ -17,11 +18,13 @@ router.post('/signup', validator(createUserSchema),
     accountExistsSignup,
     signup)
 
-router.post('/signin',
+router.post('/signin',validator(userSignIn),
     accountExistsSignin,
     accountHasBeenVerified,
     passwordIsOk,
     signin)
+
+router.post('/google', googleSignin)
 
 router.post('/signout', passport.authenticate('jwt', {session: false}), signout)
 
