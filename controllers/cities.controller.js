@@ -37,14 +37,14 @@ const controller = {
 
             return res.status(404).json({
                 success: false,
-                message: 'No se encontro resultado'
+                message: 'No result found'
             })
 
         } catch (error) {
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al obtener las ciudades'
+                message: 'Error getting cities'
             })
         }
     },
@@ -61,7 +61,7 @@ const controller = {
 
             return res.status(404).json({
                 success: false,
-                message: 'No se encontro la ciudad'
+                message: 'The city was not found'
             })
 
 
@@ -69,7 +69,7 @@ const controller = {
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al obtener la ciudad'
+                message: 'Error getting city'
             })
         }
     },
@@ -80,14 +80,14 @@ const controller = {
 
             return res.status(201).json({
                 success: true,
-                message: 'Ciudad creada'
+                message: 'City created'
             })
         } catch (error) {
             console.log(error)
 
             return res.status(500).json({
                 success: false,
-                message: 'Error al crear la ciudad'
+                message: 'Error creating city'
             })
         }
 
@@ -100,14 +100,14 @@ const controller = {
 
             return res.status(200).json({
                 success: true,
-                message: 'Ciudad actualizada'
+                message: 'Updated city'
             })
 
         } catch (error) {
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al actualizar la ciudad'
+                message: 'Error updating city'
             })
         }
     },
@@ -116,13 +116,13 @@ const controller = {
             await Citie.deleteOne({ _id: req.params.id })
             return res.status(200).json({
                 success: true,
-                message: 'Ciudad eliminada'
+                message: 'City removed'
             })
         } catch (error) {
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error al eliminar la ciudad'
+                message: 'Error deleting city'
             })
         }
     }

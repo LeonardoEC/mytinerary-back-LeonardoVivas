@@ -17,13 +17,13 @@ const controller = {
 
             return res.status(201).json({
                 success: true,
-                message: 'Usuario registrado'
+                message: 'Registered user'
             })
 
         } catch (error) {
             return res.status(500).json({
                 success: false,
-                message: 'Error al registrar el usuario'
+                message: 'Error registering user'
             })
         }
     },
@@ -53,7 +53,7 @@ const controller = {
             user.password = null
             return res.status(200).json({
                 success: true,
-                message: 'Usuario logueado correctamente',
+                message: 'User logged in correctly',
                 response: {
                     token,
                     user: {
@@ -68,7 +68,7 @@ const controller = {
         } catch (error) {
             return res.status(500).json({
                 success: false,
-                message: 'Error al autenticar el usuario'
+                message: 'Error authenticating user'
             })
         }
     },
@@ -115,7 +115,7 @@ const controller = {
 
             res.status(200).json({
                 success: true,
-                message: 'Usuario logueado correctamente con Google',
+                message: 'User correctly logged in with Google',
                 response: {
                     token,
                     user: {
@@ -129,7 +129,7 @@ const controller = {
         } catch (error) {
             res.status(500).json({
                 success: false,
-                message: 'Error al autenticar el usuario'
+                message: 'Error authenticating user'
             })
         }
     },
@@ -143,12 +143,12 @@ const controller = {
             )
             return res.status(200).json({
                 success:true,
-                message: 'Usuario deslogeado'
+                message: 'Unlogged user'
             })
         } catch (error) {
             return res.status(500).json({
                 success: false,
-                message: 'Error al autenticar el usuario'
+                message: 'Error authenticating user'
             })
         }
     },
